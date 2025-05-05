@@ -1,9 +1,29 @@
-import { Routes } from '@angular/router';
-import { LandingPageComponent } from './landing-page/landing-page.component';
+import { Routes } from "@angular/router";
+import { LandingpageComponent } from "./features/landingpage/landingpage.component";
+import { MainpageComponent } from "./features/mainpage/mainpage.component";
+import { RegisterComponent } from "./features/auth/register/register.component";
+import { ImprintComponent } from "./shared/components/imprint/imprint.component";
+import { PrivacyPolicyComponent } from "./shared/components/privacy-policy/privacy-policy.component";
 
 export const routes: Routes = [
-    {
-        path: '',
-        component: LandingPageComponent
-    }
+	{
+		path: "",
+		component: LandingpageComponent,
+	},
+	{
+		path: "register",
+		component: RegisterComponent,
+	},
+	{
+		path: "mainpage",
+		component: MainpageComponent,
+	},
+	{
+		path: "imprint",
+		component: ImprintComponent,
+	},
+	{
+		path: "privacy-policy",
+		component: PrivacyPolicyComponent,
+	},
 ];
